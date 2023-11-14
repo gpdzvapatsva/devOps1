@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps</title>
+    <style>
+        .flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  row-gap:20px;
+  
+  padding: 200;
+  margin: 80;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 2px;
+  width: 320px;
+  height: 320px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="heading"><h1 style="text-align: center;">Hi. My name is Godwin! <br/>
+    An aspiring hiker</h1></div>
+    <div class="containers"></div>
+    <ul class="flex-container">
+        <li class="flex-item"><img style width=310px height= 310px src="gp.jpg"></li>
+        <li class="flex-item"><img style width=310px height= 310px src="university.jpg"></li>
+        <li class="flex-item"><img style width=310px height= 310px src="robben.jpg"></li>
+    
+      </ul>
+</body>
+</html>
